@@ -315,7 +315,7 @@ describe("util.wiki_link_id_prefix()", function()
 
   it("should work with an anchor link", function()
     assert.equals(
-      "[[123-foo#heading|Foo ❯ Heading]]",
+      "[[123-foo#heading|Foo > Heading]]",
       util.wiki_link_id_prefix {
         path = "123-foo.md",
         id = "123-foo",
@@ -336,7 +336,7 @@ describe("util.wiki_link_path_prefix()", function()
 
   it("should work with an anchor link and header", function()
     assert.equals(
-      "[[123-foo.md#heading|Foo ❯ Heading]]",
+      "[[123-foo.md#heading|Foo > Heading]]",
       util.wiki_link_path_prefix {
         path = "123-foo.md",
         id = "123-foo",
@@ -372,7 +372,7 @@ describe("util.markdown_link()", function()
 
   it("should work with an anchor link", function()
     assert.equals(
-      "[Foo ❯ Heading](123-foo.md#heading)",
+      "[Foo > Heading](123-foo.md#heading)",
       util.markdown_link {
         path = "123-foo.md",
         id = "123-foo",

@@ -14,7 +14,7 @@ local function format_prompt(prompt_title)
   if not prompt_title then
     return
   else
-    return prompt_title .. " ❯ "
+    return prompt_title .. " > "
   end
 end
 

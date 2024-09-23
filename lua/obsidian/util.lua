@@ -973,7 +973,7 @@ end
 ---@param anchor obsidian.note.HeaderAnchor
 ---@return string
 util.format_anchor_label = function(anchor)
-  return string.format(" ❯ %s", anchor.header)
+  return string.format(" > %s", anchor.header)
 end
 
 ---@param opts { path: string, label: string, id: string|integer|?, anchor: obsidian.note.HeaderAnchor|?, block: obsidian.note.Block|? }
